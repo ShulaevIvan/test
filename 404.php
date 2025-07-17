@@ -11,7 +11,7 @@ $APPLICATION->SetTitle("Страница не найдена");?>
 
 <div class="container">
 <div class="bx-404-container">
-		<div class="bx-404-block"><img src="<?=SITE_DIR?>images/404.png" alt=""></div>
+		<div class="bx-404-block" style="margin: 0 auto;"><img src="<?=SITE_DIR?>images/404.png" alt=""></div>
 		<div class="bx-404-text-block">Неправильно набран адрес, <br>или такой страницы на сайте больше не существует.</div>
 		<div class="">Вернитесь на <a href="<?=SITE_DIR?>">главную</a> или воспользуйтесь картой сайта.</div>
 	</div>
@@ -51,25 +51,6 @@ $APPLICATION->SetTitle("Страница не найдена");?>
 			false
 		);
 		?>
-	</div>
-
-	<div class="col-sm-offset-1 col-sm-4">
-		<div class="bx-map-title"><i class="fa fa-info-circle"></i> О магазине</div>
-		<?
-		$APPLICATION->IncludeComponent(
-			"bitrix:main.map",
-			".default",
-			array(
-				"CACHE_TYPE" => "A",
-				"CACHE_TIME" => "36000000",
-				"SET_TITLE" => "N",
-				"LEVEL" => "3",
-				"COL_NUM" => "2",
-				"SHOW_DESCRIPTION" => "Y",
-				"COMPONENT_TEMPLATE" => ".default"
-			),
-			false
-		);?>
 	</div>
 </div>
 	
